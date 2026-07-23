@@ -1,0 +1,14 @@
+{
+  "name": "SharedPluginTemplate",
+  "description": "Working Revenge + Vencord plugin template with a shared core.",
+  "authors": [
+    {
+      "name": "brainage04",
+      "id": "0"
+    }
+  ],
+  "main": "src/index.ts",
+  "vendetta": {
+    "icon": "WrenchIcon"
+  }
+}

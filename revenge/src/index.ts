@@ -1,4 +1,4 @@
-import { showToast } from "@vendetta/ui/toasts";
+import { ReactNative as RN } from "@vendetta/metro/common";
 
 import { buildStartMessage } from "../../common/plugin";
 import Settings from "./settings";
@@ -7,7 +7,10 @@ import { initializeStorage, pluginStorage } from "./state";
 function onLoad() {
     initializeStorage();
     if (pluginStorage.showStartMessage)
-        showToast(buildStartMessage("SharedPluginTemplate", pluginStorage.message));
+        RN.ToastAndroid.show(
+            buildStartMessage("SharedPluginTemplate", pluginStorage.message),
+            RN.ToastAndroid.LONG
+        );
 }
 
 export default { onLoad, settings: Settings };

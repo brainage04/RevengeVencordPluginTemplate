@@ -81,7 +81,7 @@ export const plugin: PluginPage = {
         '`index.ts`: the plugin name passed to `definePlugin`, which Vencord requires to be a string literal.',
         '`vencord/` and `revenge/src/`: the plugin itself, with shared logic in `common/`.',
         '`site/src/data/plugin.ts`: the repository name, Vencord folder name and this page’s text.',
-        'The DiscordPluginInstaller catalog, if the installer should know about the plugin.',
+        '`catalog.json` in DiscordPluginInstaller, if the installer should know about the plugin.',
       ],
     },
   ],

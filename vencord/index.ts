@@ -6,7 +6,7 @@
 
 import { definePluginSettings } from "@api/Settings";
 import { OptionType, type PluginDef } from "@utils/types";
-import { showToast, Toasts } from "@webpack/common";
+import { showToast } from "@webpack/common";
 
 import { buildStartMessage, DEFAULT_CONFIG } from "../common/plugin";
 
@@ -30,6 +30,6 @@ export const vencordPlugin = {
 
     start() {
         if (settings.store.showStartMessage)
-            showToast(buildStartMessage("RevengeVencordPluginTemplate", settings.store.message), Toasts.Type.MESSAGE);
+            showToast({ text: buildStartMessage("RevengeVencordPluginTemplate", settings.store.message) });
     }
 } satisfies Omit<PluginDef, "name">;

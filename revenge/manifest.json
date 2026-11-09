@@ -1,5 +1,5 @@
 {
-  "name": "SharedPluginTemplate",
+  "name": "RevengeVencordPluginTemplate",
   "description": "Working Revenge + Vencord plugin template with a shared core.",
   "authors": [
     {

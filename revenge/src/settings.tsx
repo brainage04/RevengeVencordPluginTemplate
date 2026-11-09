@@ -17,7 +17,7 @@ export default function Settings() {
 
     return (
         <RN.ScrollView style={{ flex: 1 }} contentContainerStyle={{ paddingBottom: 38 }}>
-            <FormSection title="Shared plugin template" titleStyleType="no_border">
+            <FormSection title="RevengeVencordPluginTemplate" titleStyleType="no_border">
                 <FormSwitchRow
                     label="Show start message"
                     value={pluginStorage.showStartMessage}

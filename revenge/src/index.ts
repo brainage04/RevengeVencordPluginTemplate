@@ -14,7 +14,7 @@ function onLoad() {
     initializeStorage();
     if (pluginStorage.showStartMessage)
         RN.ToastAndroid.show(
-            buildStartMessage("SharedPluginTemplate", pluginStorage.message),
+            buildStartMessage("RevengeVencordPluginTemplate", pluginStorage.message),
             RN.ToastAndroid.LONG
         );
 }

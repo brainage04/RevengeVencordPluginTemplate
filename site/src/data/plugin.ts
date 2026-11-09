@@ -36,9 +36,9 @@ export interface PluginPage {
 export const plugin: PluginPage = {
   repository: 'RevengeVencordPluginTemplate',
   summary:
-    'A working starting point for Discord plugins that run on both Revenge (Android) and Vencord (Vesktop) from one repository: shared logic in one place, a small adapter per client, and this page, which also serves the Revenge build.',
+    'A working starting point for Discord plugins that run on both Revenge (Android) and Vencord (Vesktop) from one repository: shared logic in one place, a small adapter per client, and this page, which also serves the Revenge build. The example plugin has the same name as the repository, RevengeVencordPluginTemplate; give it your own name when you start a new plugin.',
   vencordEntry: 'index.ts',
-  vencordDirectory: 'sharedPluginTemplate.vesktop',
+  vencordDirectory: 'revengeVencordPluginTemplate.vesktop',
   cards: {
     title: 'How it works',
     items: [
@@ -73,7 +73,7 @@ export const plugin: PluginPage = {
     },
   ],
   settingsNote:
-    'The example plugin shows a toast such as `SharedPluginTemplate: Both platform adapters are using the shared core.` when it starts.',
+    'The example plugin shows a toast such as `RevengeVencordPluginTemplate: Both platform adapters are using the shared core.` when it starts.',
   sections: [
     {
       title: 'Starting a new plugin',

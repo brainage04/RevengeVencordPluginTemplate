@@ -4,12 +4,12 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-export interface SharedPluginConfig {
+export interface PluginConfig {
     message: string;
     showStartMessage: boolean;
 }
 
-export const DEFAULT_CONFIG: SharedPluginConfig = {
+export const DEFAULT_CONFIG: PluginConfig = {
     message: "Both platform adapters are using the shared core.",
     showStartMessage: true
 };

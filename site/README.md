@@ -1,6 +1,6 @@
-# SharedPluginTemplate website
+# RevengeVencordPluginTemplate website
 
-The GitHub Pages site for SharedPluginTemplate: a page about the plugin, and the Revenge plugin itself. The site root serves the Revenge build (`manifest.json` and `index.js`) next to the page, so `https://brainage04.github.io/RevengeVencordPluginTemplate/` is both the page and the URL to install in Revenge. Revenge fetches `manifest.json` from that URL each time Discord starts and downloads the new `index.js` when the manifest's `hash` changes, so every deploy reaches installed copies on the next start.
+The GitHub Pages site for RevengeVencordPluginTemplate: a page about the plugin, and the Revenge plugin itself. The site root serves the Revenge build (`manifest.json` and `index.js`) next to the page, so `https://brainage04.github.io/RevengeVencordPluginTemplate/` is both the page and the URL to install in Revenge. Revenge fetches `manifest.json` from that URL each time Discord starts and downloads the new `index.js` when the manifest's `hash` changes, so every deploy reaches installed copies on the next start.
 
 The repository root is the plugin; this folder is a separate Astro project built with [AstroShell](https://github.com/brainage04/AstroShell).
 

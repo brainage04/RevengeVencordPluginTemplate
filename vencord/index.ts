@@ -30,6 +30,6 @@ export const vencordPlugin = {
 
     start() {
         if (settings.store.showStartMessage)
-            showToast(buildStartMessage("SharedPluginTemplate", settings.store.message), Toasts.Type.MESSAGE);
+            showToast(buildStartMessage("RevengeVencordPluginTemplate", settings.store.message), Toasts.Type.MESSAGE);
     }
 } satisfies Omit<PluginDef, "name">;

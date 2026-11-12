@@ -20,6 +20,7 @@ export interface Section {
 export interface PluginPage {
   /** GitHub repository name; also the Pages base path (`https://brainage04.github.io/<repository>/`). */
   repository: string;
+  summary: string;
   /** The Vencord entry file in the repository root. */
   vencordEntry: 'index.ts' | 'index.tsx';
   /** Folder name under Vencord's `src/userplugins/`, as in DiscordPluginInstaller's catalog. */
@@ -34,6 +35,8 @@ export interface PluginPage {
 
 export const plugin: PluginPage = {
   repository: 'RevengeVencordPluginTemplate',
+  summary:
+    'A working starting point for Discord plugins that run on both Revenge (Android) and Vencord (Vesktop) from one repository: shared logic in one place, a small adapter per client, and this page, which also serves the Revenge build. The example plugin has the same name as the repository, RevengeVencordPluginTemplate. Give it your own name when you start a new plugin.',
   vencordEntry: 'index.ts',
   vencordDirectory: 'revengeVencordPluginTemplate.vesktop',
   cards: {
@@ -49,7 +52,7 @@ export const plugin: PluginPage = {
       },
       {
         title: 'Vencord adapter',
-        text: '`index.ts` and `vencord/` are the Vencord userplugin. Its settings use Vencord’s settings API; the Revenge side has a matching settings screen.',
+        text: '`index.ts` and `vencord/` are the Vencord userplugin. Its settings use Vencord’s settings API, and the Revenge side has a matching settings screen.',
       },
       {
         title: 'Plugin website',
